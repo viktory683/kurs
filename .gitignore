@@ -1,0 +1,8 @@
+/__pycache__/
+/.idea/
+data.sqlite
+/build/
+/dist/
+main.spec
+re
+sys
