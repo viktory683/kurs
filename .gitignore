@@ -1,8 +1,8 @@
 /__pycache__/
 /.idea/
-data.sqlite
+#data.sqlite
 /build/
-/dist/
 main.spec
 re
 sys
+report.txt
