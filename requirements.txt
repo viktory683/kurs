@@ -1,0 +1,7 @@
+altgraph==0.17.2
+autopep8==1.6.0
+pycodestyle==2.8.0
+pyinstaller-hooks-contrib==2022.2
+PySide2==5.15.2.1
+shiboken2==5.15.2.1
+toml==0.10.2

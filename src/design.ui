@@ -6,127 +6,531 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>789</width>
-    <height>591</height>
+    <width>841</width>
+    <height>582</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="horizontalLayoutWidget">
+   <widget class="Line" name="line_5">
     <property name="geometry">
      <rect>
-      <x>9</x>
-      <y>9</y>
-      <width>771</width>
-      <height>551</height>
+      <x>540</x>
+      <y>10</y>
+      <width>20</width>
+      <height>541</height>
      </rect>
     </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>258</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetDefaultConstraint</enum>
+     </property>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="events_list_label">
-         <property name="layoutDirection">
-          <enum>Qt::LeftToRight</enum>
-         </property>
-         <property name="text">
-          <string>Список событий</string>
-         </property>
-         <property name="textFormat">
-          <enum>Qt::PlainText</enum>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QListView" name="events_list"/>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <widget class="Line" name="line">
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
+      <widget class="QLabel" name="events_list_label">
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="text">
+        <string>Список событий</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::PlainText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
       </widget>
      </item>
      <item>
-      <layout class="QVBoxLayout" name="verticalLayout">
+      <widget class="QListView" name="events_list"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>259</x>
+      <y>10</y>
+      <width>31</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>10</y>
+      <width>258</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="new_event_label">
+       <property name="text">
+        <string>Новое событие</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="new_event_field">
+       <property name="locale">
+        <locale language="Russian" country="Russia"/>
+       </property>
+       <property name="placeholderText">
+        <string>Название события</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDateTimeEdit" name="dateTimeEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="new_event_btn">
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_4">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Добавить организатора</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
        <item>
-        <widget class="QLabel" name="new_event_label">
+        <widget class="QTextEdit" name="org_id_input_field">
+         <property name="placeholderText">
+          <string>id события</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="org_role_input_field">
+         <property name="placeholderText">
+          <string>Роль организатора</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_4">
+       <item>
+        <widget class="QTextEdit" name="org_firstname_input_field">
+         <property name="placeholderText">
+          <string>Имя</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="org_lastname_input_field">
+         <property name="placeholderText">
+          <string>Фамилия</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="org_phone_input_field">
+       <property name="placeholderText">
+        <string>Телефон</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="org_email_input_field">
+       <property name="placeholderText">
+        <string>Рабочая почта</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="org_add_btn">
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="delete_label">
+       <property name="text">
+        <string>Удалить событие</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="delete_event_field">
+       <property name="placeholderText">
+        <string>id события для удаления</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="delete_event_btn">
+       <property name="text">
+        <string>Удалить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="safe_label">
+       <property name="text">
+        <string>Создать отчет</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="safe_btn">
+       <property name="text">
+        <string>Сохранить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_5">
+       <property name="text">
+        <string>Создать отчет по событию</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QTextEdit" name="safe_event_id_field">
+         <property name="placeholderText">
+          <string>id события</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="safe_event_btn">
          <property name="text">
-          <string>Новое событие</string>
+          <string>Сохранить</string>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>10</y>
+      <width>271</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="text">
+        <string>Добавить участника</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="add_participant_event_id_input_field">
+       <property name="placeholderText">
+        <string>id события</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_6">
+       <item>
+        <widget class="QTextEdit" name="participant_firstname_input_field">
+         <property name="placeholderText">
+          <string>Имя</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="new_event_field"/>
+        <widget class="QTextEdit" name="participant_lastname_input_field">
+         <property name="placeholderText">
+          <string>Фамилия</string>
+         </property>
+        </widget>
        </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="participant_phone_input_field">
+       <property name="placeholderText">
+        <string>Телефон</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="participant_email_input_field">
+       <property name="placeholderText">
+        <string>Рабочая почта</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="participant_push_btn">
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_6">
+       <property name="text">
+        <string>Добавить обеспечение</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_7">
        <item>
-        <widget class="QDateTimeEdit" name="dateTimeEdit"/>
-       </item>
-       <item>
-        <widget class="QPushButton" name="new_event_btn">
-         <property name="text">
-          <string>Добавить</string>
+        <widget class="QTextEdit" name="consumables_envent_id_input_field">
+         <property name="placeholderText">
+          <string>id события</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="Line" name="line_2">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
+        <widget class="QTextEdit" name="consumables_volume_input_field">
+         <property name="placeholderText">
+          <string>колличество</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="delete_label">
-         <property name="text">
-          <string>Удалить событие</string>
+        <widget class="QTextEdit" name="consumables_unit_input_field">
+         <property name="html">
+          <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;шт&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
          </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+         <property name="placeholderText">
+          <string>единица измерения</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="consumables_name_input_field">
+       <property name="placeholderText">
+        <string>Название требуемого</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="consumables_push_btn">
+       <property name="text">
+        <string>Добавить</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Line" name="line_9">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_7">
+       <property name="text">
+        <string>Удалить обеспечение</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_8">
+       <item>
+        <widget class="QTextEdit" name="consumables_event_delete_id_input_field">
+         <property name="placeholderText">
+          <string>id события</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="delete_event_field"/>
+        <widget class="QTextEdit" name="consumables_delete_id_input_field">
+         <property name="placeholderText">
+          <string>id обеспечения</string>
+         </property>
+        </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="delete_evenet_btn">
+        <widget class="QPushButton" name="consumables_delete_btn">
          <property name="text">
           <string>Удалить</string>
          </property>
         </widget>
        </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_10">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_3">
+       <property name="text">
+        <string>Удалить организатора</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
-        <widget class="Line" name="line_3">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
+        <widget class="QTextEdit" name="org_delete_event_id_input_field">
+         <property name="placeholderText">
+          <string>id события</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="safe_label">
-         <property name="text">
-          <string>Создать отчет</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
+        <widget class="QTextEdit" name="org_delete_id_input_field">
+         <property name="placeholderText">
+          <string>id организатора</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="safe_btn">
+        <widget class="QPushButton" name="org_delete_btn">
          <property name="text">
-          <string>Сохранить</string>
+          <string>Удалить</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_4">
+       <property name="text">
+        <string>Удалить участника</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QTextEdit" name="participant_delete_event_id_input_field">
+         <property name="placeholderText">
+          <string>id события</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QTextEdit" name="participant_delete_id_input_field">
+         <property name="placeholderText">
+          <string>id участника</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="participant_delete_btn">
+         <property name="text">
+          <string>Удалить</string>
          </property>
         </widget>
        </item>
